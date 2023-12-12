@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "name": "SAVE LIFE MEDICAL CAMP",
+        "title": "Save Life Medical Camp is a medical service provider website. Where you can get different types of medical campaign information, you can join a camp by registering yourself.",
+        "image1": "https://i.ibb.co/w6Fcsbq/s-1.png",
+        "image2": "https://i.ibb.co/NNPwdqD/s-2.png",
+        "image3": "https://i.ibb.co/jzDfDt8/s-3.png",
+        "image4": "https://i.ibb.co/vXZWWy2/s-4.png",
+        "image5": "https://i.ibb.co/wcqhKNF/s-5.png",
+        "image6": "https://i.ibb.co/gRyzKhQ/s-6.png",
+        "image7": "https://i.ibb.co/qkjkrM9/s-7.png",
+        "live_link": "https://save-life-medical-camp.web.app/",
+        "features": [
+            "Smooth and Responsive Design",
+            "User Friendly",
+            "User can register for a camp",
+            "Payment Gateway through Stripe",
+            "User authentication with firebase",
+            "Admin, user and professionals dashboard"
+        ],
+        "github_link": "https://github.com/msasif2000/save-life-camp-client"
+    },
+    {
+        "id": "2",
+        "name": "Soft Blog",
+        "title": "A blog site, where you can read and write different categories blogs.",
+        "image1": "https://i.ibb.co/3FyxYH7/b-1.png",
+        "image2": "https://i.ibb.co/pfNQCZn/b-2.png",
+        "image3": "https://i.ibb.co/fkgLxTV/b-3.png",
+        "image4": "https://i.ibb.co/s3cWBKb/b-4.png",
+        "image5": "https://i.ibb.co/2Mp1NHV/b-5.png",
+        "image6": "https://i.ibb.co/s3cWBKb/b-4.png",
+        "image7": "https://i.ibb.co/2Mp1NHV/b-5.png",
+        "live_link": "https://soft-blogs.web.app/",
+        "features": [
+            "authenticated user can read and write blogs",
+            "Anyone can comments on blogs",
+            "User can save blogs to his/her wishlist",
+            "User can search blogs by category or title",
+            "Smooth and Responsive Design",
+            "Latest blog updated automatically shown on home page"
+        ],
+        "github_link": "https://github.com/msasif2000/soft-blog-client-side"
+    }
+    ,
+    {
+        "id": "3",
+        "name": "PH-Tech Shop",
+        "title": "PH-Tech Shop is an e-commerce website. Where you can buy different types of Electronic devices like smartphone, smartwatch, laptop, tab and so many branded products.",
+        "image1": "https://i.ibb.co/r2sGGsT/t-1.png",
+        "image2": "https://i.ibb.co/HPTC0x5/t-2.png",
+        "image3": "https://i.ibb.co/ZG7Yznb/t-3.png",
+        "image4": "https://i.ibb.co/s3cWBKb/b-4.png",
+        "image5": "https://i.ibb.co/P4cbdKS/t-5.png",
+        "image6": "https://i.ibb.co/s3cWBKb/b-4.png",
+        "image7": "https://i.ibb.co/P4cbdKS/t-5.png",
+        "live_link": "https://tech-ph-bd-ba939.web.app/",
+        "features": [
+            "User authorization is must for buying products",
+            "User can select products and add to cart",
+            "Branded products are categorized by their brand name",
+            "latest products are shown on home page"
+        ],
+        "github_link": "https://github.com/msasif2000/tech-shop-client-side"
+    }
+
+]
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+/* 
+.scrollTop {
+    position: fixed; 
+    width: 100%;
+    bottom: 20px;
+    align-items: right;
+    height: 20px;
+    justify-content: right;
+    z-index: 1000;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 1;
+  }
+  
+  .scrollTop:hover{
+    opacity: 15;
+  } */
