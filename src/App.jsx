@@ -24,7 +24,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaCode } from 'react-icons/fa';
 
-import resume from '../src/assets/resume.pdf'
+import resume from '../src/assets/MOSTAFA SHARIAR ASIF.pdf'
 import logo from '../src/assets/logo.png'
 import Typewriter from 'typewriter-effect'
 import Projects from './Projects'
@@ -73,7 +73,7 @@ function App() {
                 </ul>
               </div>
               <div className="navbar-end ">
-                <a href={resume} download="Resume of M S Asif"><button className="btn btn-sm rounded-full text-blue-600 text-xl">Download CV</button></a>
+                <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full text-blue-600 text-xl">RESUME</button></a>
 
               </div>
             </div>
@@ -146,9 +146,9 @@ function App() {
                 <h2 className='text-3xl text-center text- font-bold text-[#615CD4]'>Skills</h2>
                 <div className='md:grid lg:grid-cols-3  md:grid-cols-4  lg:gap-4 gap-2'>
 
-                  <div className='lg:col-span-2 col-span-3  rounded-xl p-1 bg-slate-900'>
+                  <div className='lg:col-span-2 col-span-3  rounded-xl md:p-2 p-1 bg-slate-900'>
                     <h1 className='text-center text-xl text-white font-bold py-2'>Front-end</h1>
-                    <div className='grid md:grid-cols-3 grid-cols-2 lg:gap-6 gap-1 '>
+                    <div className='grid md:grid-cols-3 grid-cols-2 lg:gap-6 gap-2 '>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><AiFillHtml5 />HTML</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><DiCss3 />CSS</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiTailwindcss />Tailwind CSS</button>
@@ -183,7 +183,7 @@ function App() {
                   </div>
                   <div className='lg:col-span-3 col-span-4 rounded-xl p-2 bg-slate-900 md:mt-0 mt-2'>
                     <h1 className='text-center text-xl text-white font-bold py-2'>Other Languages & Skills</h1>
-                    <div className='grid grid-cols-3 gap-6'>
+                    <div className='grid grid-cols-3 md:gap-6 gap-3'>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><FaCode/> C</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiCplusplus />C++</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><AiTwotoneDatabase />DSA</button>
