@@ -1,6 +1,28 @@
 [
     {
         "id": "1",
+        "name": "LumiJobs",
+        "title": "LumiJobs is a Hiring Agency and Communicational Platform where The Job Seekers and the Jobs Providers can attached in a real-time application tracking system.",
+        "image1": "https://i.ibb.co/7pMj3nR/l-1.png",
+        "image2": "https://i.ibb.co/dtkPrCS/l-2.png",
+        "image3": "https://i.ibb.co/TYDs4W8/l-3.png",
+        "image4": "https://i.ibb.co/f2nkvm2/l-5.png",
+        "image5": "https://i.ibb.co/sQ8X7Rw/l-4.png",
+        "image6": "https://i.ibb.co/8N6rBrv/l-6.png",
+        "image7": "https://i.ibb.co/TH5yH0G/l-7.png",
+        "live_link": "https://lumijobs.tech/",
+        "features": [
+            "Real-time job listing, Search, Multi-filter, Skills-based job suggestions",
+            "Bookmark, Pagination, Job Share, Applicants number in the Job post",
+            "Subscription and Payment Gateway, Blogs and Seminars",
+            "Profile upgrade, view, customization, dashboard management",
+            "Job Apply, Job management, Application tracking",
+            "Collaboration Hub, feedback and ratings"
+        ],
+        "github_link": "https://github.com/msasif2000/LumiJob-Client"
+    },
+    {
+        "id": "2",
         "name": "SAVE LIFE MEDICAL CAMP",
         "title": "Save Life Medical Camp is a medical service provider website. Where you can get different types of medical campaign information, you can join a camp by registering yourself.",
         "image1": "https://i.ibb.co/w6Fcsbq/s-1.png",
@@ -12,17 +34,17 @@
         "image7": "https://i.ibb.co/qkjkrM9/s-7.png",
         "live_link": "https://save-life-medical-camp.web.app/",
         "features": [
-            "Smooth and Responsive Design",
-            "User Friendly",
+            "Smooth and Responsive Design, User Friendly",
+            "Medical Campaign creation, Arrangement, Manage Functions",
             "User can register for a camp",
-            "Payment Gateway through Stripe",
+            "Payment Gateway through Stripe, Payment System and History",
             "User authentication with firebase",
             "Admin, user and professionals dashboard"
         ],
         "github_link": "https://github.com/msasif2000/save-life-camp-client"
     },
     {
-        "id": "2",
+        "id": "3",
         "name": "SOFT BLOG",
         "title": "A blog site, where you can read and write different categories blogs.",
         "image1": "https://i.ibb.co/3FyxYH7/b-1.png",
@@ -34,47 +56,14 @@
         "image7": "https://i.ibb.co/2Mp1NHV/b-5.png",
         "live_link": "https://soft-blogs.web.app/",
         "features": [
-            "authenticated user can read and write blogs",
+            "Authenticated user can read and write blogs",
             "Anyone can comments on blogs",
             "User can save blogs to his/her wishlist",
             "User can search blogs by category or title",
             "Smooth and Responsive Design",
-            "Latest blog updated automatically shown on home page"
+            "Latest blog updated automatically shown on home page", 
+            "Reaction on post, Comment system, Text editor for creating post"
         ],
         "github_link": "https://github.com/msasif2000/soft-blog-client-side"
     }
-    ,
-    {
-        "id": "3",
-        "name": "PH-TECH SHOP",
-        "title": "PH-Tech Shop is an e-commerce website. Where you can buy different types of Electronic devices like smartphone, smartwatch, laptop, tab and so many branded products.",
-        "image1": "https://i.ibb.co/r2sGGsT/t-1.png",
-        "image2": "https://i.ibb.co/HPTC0x5/t-2.png",
-        "image3": "https://i.ibb.co/ZG7Yznb/t-3.png",
-        "image4": "https://i.ibb.co/4mp5fxY/t-4.png",
-        "image5": "https://i.ibb.co/P4cbdKS/t-5.png",
-        "image6": "https://i.ibb.co/4mp5fxY/t-4.png",
-        "image7": "https://i.ibb.co/P4cbdKS/t-5.png",
-        "live_link": "https://tech-ph-bd-ba939.web.app/",
-        "features": [
-            "User authorization is must for buying products",
-            "User can select products and add to cart",
-            "Branded products are categorized by their brand name",
-            "latest products are shown on home page"
-        ],
-        "github_link": "https://github.com/msasif2000/tech-shop-client-side"
-    }
-
 ]
-
-
-
-
-
-
-
-
-
-
-
-

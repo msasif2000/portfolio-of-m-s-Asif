@@ -80,7 +80,7 @@ function App() {
           </section>
           {/* Typewriter */}
           <div className='flex flex-col gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
-            <h1 className="text-center text-white md:text-5xl lg:text-6xl text-3xl flex gap-2 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
+            <h1 className="text-center text-white md:text-5xl lg:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
             <h1 className='text-center text-white md:text-6xl text-4xl flex'>
               <Typewriter
 
@@ -105,7 +105,7 @@ function App() {
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
 
               <div className='lg:w-1/3  p-2 rounded-xl'>
-                <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className=' w-full h-full rounded shadow-lg  shadow-blue-600' />
+                <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className=' w-full h-full rounded shadow-lg  shadow-[#615CD4]' />
               </div>
 
               <div className='lg:w-2/3 space-y-2 rounded-xl h-full p-2 lg:mt-0 mt-2'>
