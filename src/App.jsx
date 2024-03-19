@@ -1,5 +1,8 @@
-import { AiTwotoneDatabase } from "react-icons/ai"; 
-import { SiCplusplus } from "react-icons/si"; 
+import { SiTypescript } from "react-icons/si"; 
+import { BsTrello } from "react-icons/bs"; 
+import { FaDownload } from "react-icons/fa";
+import { AiTwotoneDatabase } from "react-icons/ai";
+import { SiCplusplus } from "react-icons/si";
 import { SiVercel } from "react-icons/si";
 import { SiNetlify } from "react-icons/si";
 import { SiCanva } from "react-icons/si";
@@ -24,7 +27,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaCode } from 'react-icons/fa';
 
-import resume from '../src/assets/MOSTAFA SHARIAR ASIF.pdf'
+import resume from '../src/assets/MOSTAFA SHAHRIAR ASIF.pdf'
 import logo from '../src/assets/logo.png'
 import Typewriter from 'typewriter-effect'
 import Projects from './Projects'
@@ -44,14 +47,13 @@ function App() {
     <div className=''>
       <div>
         {/* Navbar */}
-
         <div style={homeStyle} className=''>
           <section className='fixed top-0 right-0 z-40 w-full '>
             <div className="navbar  md:container mx-auto   rounded-full  px-2 transition-colors duration-500  backdrop-blur-2xl  ">
-              <div className="navbar-start ">
+              <div className="navbar-start md:w-2/3">
                 <div className="dropdown">
-                  <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  <div tabIndex={0} role="button" className="btn btn-info lg:hidden ml-2 px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                   </div>
                   <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><a href='#about' className='lg:text-white text-black text-xl'>About me</a></li>
@@ -61,10 +63,7 @@ function App() {
                     <li><a href='#contact' className='lg:text-white text-black text-xl'>Contacts</a></li>
                   </ul>
                 </div>
-                <img src={logo} alt="" className='h-[60px] w-[100px] shadow-lg shadow-[#615CD4] rounded-full' />
-              </div>
-              <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 hidden lg:flex">
                   <li><a href='#about' className='lg:text-white text-black text-xl'>About me</a></li>
                   <li><a href='#skills' className='lg:text-white text-black text-xl'>Skills</a></li>
                   <li><a href='#projects' className='lg:text-white text-black text-xl'>Projects</a></li>
@@ -72,14 +71,16 @@ function App() {
                   <li><a href='#contact' className='lg:text-white text-black text-xl'>Contacts</a></li>
                 </ul>
               </div>
+
               <div className="navbar-end ">
-                <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full text-blue-600 text-xl">RESUME</button></a>
+                <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full text-blue-600 text-xl"><FaDownload className="text-slate-800" /> RESUME</button></a>
 
               </div>
             </div>
           </section>
           {/* Typewriter */}
           <div className='flex flex-col gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
+            <h1 className="text-center text-white md:text-5xl lg:text-6xl text-3xl flex gap-2 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
             <h1 className='text-center text-white md:text-6xl text-4xl flex'>
               <Typewriter
 
@@ -87,7 +88,7 @@ function App() {
                   autoStart: true,
                   loop: true,
                   delay: 80,
-                  strings: ['HELLO! This is <strong>MOSTAFA SHAHRIAR ASIF</strong>', ' A <strong>React Front-end Developer</strong></span>', 'WELCOME to my PORTFOLIO!'],
+                  strings: [' A <strong>React Front-end Developer</strong></span>', 'WELCOME to my PORTFOLIO!'],
                 }}
               />
             </h1>
@@ -104,7 +105,7 @@ function App() {
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
 
               <div className='lg:w-1/3  p-2 rounded-xl'>
-                <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className=' w-full h-full rounded shadow-lg shadow-blue-600' />
+                <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className=' w-full h-full rounded shadow-lg  shadow-blue-600' />
               </div>
 
               <div className='lg:w-2/3 space-y-2 rounded-xl h-full p-2 lg:mt-0 mt-2'>
@@ -146,13 +147,23 @@ function App() {
                 <h2 className='text-3xl text-center text- font-bold text-[#615CD4]'>Skills</h2>
                 <div className='md:grid lg:grid-cols-3  md:grid-cols-4  lg:gap-4 gap-2'>
 
+                <div className='lg:col-span-3 col-span-4 rounded-xl p-2 bg-slate-900 md:mt-0 mt-2'>
+                    <h1 className='text-center text-xl text-white font-bold py-2'>Languages & Algorithms</h1>
+                    <div className='grid grid-cols-3 md:gap-6 gap-3'>
+                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><TbBrandJavascript />JavaScript</button>
+                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiTypescript /> TypeScript</button>
+                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><FaCode /> C</button>
+                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiCplusplus />C++</button>
+                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><AiTwotoneDatabase />DSA</button>
+                    </div>
+                  </div>
+
                   <div className='lg:col-span-2 col-span-3  rounded-xl md:p-2 p-1 bg-slate-900'>
                     <h1 className='text-center text-xl text-white font-bold py-2'>Front-end</h1>
                     <div className='grid md:grid-cols-3 grid-cols-2 lg:gap-6 gap-2 '>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><AiFillHtml5 />HTML</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><DiCss3 />CSS</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiTailwindcss />Tailwind CSS</button>
-                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><TbBrandJavascript />JavaScript</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><FaReact />React</button>
                     </div>
                   </div>
@@ -179,14 +190,8 @@ function App() {
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiCanva />Canva</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiNetlify />Netlify</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiVercel />Vercel</button>
-                    </div>
-                  </div>
-                  <div className='lg:col-span-3 col-span-4 rounded-xl p-2 bg-slate-900 md:mt-0 mt-2'>
-                    <h1 className='text-center text-xl text-white font-bold py-2'>Other Languages & Skills</h1>
-                    <div className='grid grid-cols-3 md:gap-6 gap-3'>
-                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><FaCode/> C</button>
-                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiCplusplus />C++</button>
-                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><AiTwotoneDatabase />DSA</button>
+                      <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><BsTrello />Trello</button>
+
                     </div>
                   </div>
                 </div>
@@ -245,8 +250,8 @@ function App() {
               </div>
 
             </div>
-            <div className="md:mt-0 mt-2 flex justify-center items-center "><img src={logo} alt="" className="h-40 w-40"/></div>
-            
+            <div className="md:mt-0 mt-2 flex justify-center items-center "><img src={logo} alt="" className="h-40 w-40" /></div>
+
           </section>
 
 

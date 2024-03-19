@@ -28,7 +28,7 @@ const ScrollTopArrow = () => {
     <div>
       
       <BiArrowFromBottom
-        className="scrollTop z-1000 text-red-800 text-3xl cursor-pointer fixed bottom-4 right-4"
+        className="scrollTop z-1000 text-blue-600 bg-white rounded py-1/2 text-3xl cursor-pointer fixed bottom-2 right-2"
         onClick={scrollTop}
         style={{ height: 50, display: showScroll ? 'flex' : 'none' }}
       />
