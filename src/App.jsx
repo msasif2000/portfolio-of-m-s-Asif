@@ -73,7 +73,7 @@ function App() {
               </div>
 
               <div className="navbar-end ">
-                <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full text-blue-600 text-xl"><FaDownload className="text-slate-800" /> RESUME</button></a>
+                <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full bg-white text-blue-600 text-xl"><FaDownload className="text-slate-800" /> RESUME</button></a>
 
               </div>
             </div>
@@ -95,7 +95,7 @@ function App() {
 
             <div className='flex gap-12'>
               <a href="#projects"><button className='btn bg-transparent text-white text-xl hover:-translate-x-2 hover:text-blue-600 hover:bg-white'>My Projects</button></a>
-              <a href="#services"><button className='btn bg-=white text-blue-600 text-xl hover:translate-x-2 hover:text-white hover:bg-transparent'>See Services</button></a>
+              <a href="#services"><button className='btn text-blue-600 text-xl hover:translate-x-2 bg-white hover:text-white hover:bg-blue-600'>See Services</button></a>
             </div>
           </div>
         </div>
