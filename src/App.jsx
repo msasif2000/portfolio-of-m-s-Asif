@@ -88,7 +88,7 @@ function App() {
                   autoStart: true,
                   loop: true,
                   delay: 80,
-                  strings: [' A <strong>React Front-end Developer</strong></span>', 'WELCOME to my PORTFOLIO!'],
+                  strings: [' A <strong>FULL STACK(MERN) DEVELOPER</strong></span>', 'WELCOME to my PORTFOLIO!'],
                 }}
               />
             </h1>
@@ -117,21 +117,21 @@ function App() {
                       autoStart: true,
                       loop: true,
                       delay: 100,
-                      strings: ['Frontend Developer', 'Code Learner', 'Studying Computer Science and Engineering'],
+                      strings: ['FULL STACK(MERN) DEVELOPER', 'Code Learner', 'Studying Computer Science and Engineering'],
                     }}
                   />
                 </h1>
                 <p className='text-slate-300 '>
                   <br />
-                  I am Mostafa Shahriar Asif, a Front-end Web Developer, a dedicated Computer Science and Engineering student at the International Islamic University Chittagong. As a passionate Front-end Web Developer, I specialize in crafting engaging and dynamic websites using React Js. My journey in the realm of web development goes beyond the front-end, as I also possess a foundational understanding of backend technologies.
+                  I am Mostafa Shahriar Asif, a FULL STACK(MERN) DEVELOPER, a dedicated Computer Science and Engineering student at the International Islamic University Chittagong. As a passionate Front-end Web Developer, I specialize in crafting engaging and dynamic websites using React Js. My journey in the realm of web development goes beyond the front-end, as I also possess a foundational understanding of backend technologies.
                   <br />
                   <br />
 
-                  Currently, I am immersed in the exploration of Next.js and Redux to further enhance my skill set. My immediate goal is to secure a position in a dynamic company where I can contribute my expertise and continue to grow as a professional. I take pride in having completed three noteworthy projects that showcase both my creativity and technical proficiency.Driven by a relentless pursuit of excellence, I aspire to excel in the ever-evolving field of web development. My commitment to delivering exceptional user experiences and staying abreast of industry trends fuels my determination to make a lasting impact in the world of technology.
+                  Currently, I am immersed in the exploration of Next.js to further enhance my skill set. My immediate goal is to secure a position in a dynamic company where I can contribute my expertise and continue to grow as a professional. I take pride in having completed three noteworthy projects that showcase both my creativity and technical proficiency.Driven by a relentless pursuit of excellence, I aspire to excel in the ever-evolving field of web development. My commitment to delivering exceptional user experiences and staying abreast of industry trends fuels my determination to make a lasting impact in the world of technology.
                   Let`s build something remarkable together!
                 </p>
                 <h2 className='text-2xl font-bold text-white pt-6'>Education</h2>
-                <p className=" text-slate-200  text-xl">BSc. in Computer Science and Engineering</p>
+                <p className=" text-slate-200  text-xl">BSc. in Computer Science and Engineering (8th Semester)</p>
                 <p className="pl-4 text-slate-400">International Islamic University Chittagong</p>
                 <p className=" text-slate-200  text-xl">HSC (2019)</p>
                 <p className="pl-4 text-slate-400">Govt. City College Chittagong</p>
@@ -207,9 +207,10 @@ function App() {
                 <h2 className='text-3xl text-center text- font-bold text-[#615CD4]'>Services</h2>
                 <ul className="text-slate-300 text-xl">
                   <li className="flex items-center"><MdDragIndicator />Interactive and Dynamic website using React</li>
-                  <li className="flex items-center"><MdDragIndicator />User Authentication using firebase</li>
+                  <li className="flex items-center"><MdDragIndicator />Backend Development using Node JS and Express JS</li>
+                  <li className="flex items-center"><MdDragIndicator />JWT, Payment Gateway, Authentication</li>
                   <li className="flex items-center"><MdDragIndicator />Responsive Design</li>
-                  <li className="flex items-center"><MdDragIndicator />Database management to store Information</li>
+                  <li className="flex items-center"><MdDragIndicator />Database management (MongoDB) to store Information</li>
                   <li className="flex items-center"><MdDragIndicator />Different Interface design for different role</li>
                 </ul>
               </div>
