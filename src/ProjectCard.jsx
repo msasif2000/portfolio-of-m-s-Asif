@@ -30,7 +30,8 @@ const ProjectCard = ({ project }) => {
 
             </Carousel>
             <div className="text-slate-400 flex flex-col items-center justify-center p-4 gap-6 rounded-lg mt-2 mb-12">
-                <h2 className="text-[#615CD4] font-bold text-xl">{name}</h2>
+                <h2 data-aos="fade-up"
+     data-aos-duration="3000" className="text-[#615CD4] font-bold text-xl">{name}</h2>
                 <p className="h-28">{title}</p>
 
                 <div className="h-full">

@@ -33,6 +33,9 @@ import Typewriter from 'typewriter-effect'
 import Projects from './Projects'
 import ScrollTopArrow from './ScrollTopArrow'
 import bg from '../src/assets/Home.png'
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function App() {
 
   const homeStyle = {
@@ -41,6 +44,11 @@ function App() {
     'background-size': 'cover',
     'background-position': 'center',
   }
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
 
   const currentYear = new Date().getFullYear();
   return (
@@ -71,7 +79,7 @@ function App() {
                   <li><a href='#contact' className='lg:text-white text-black text-xl'>Contacts</a></li>
                 </ul>
               </div>
-
+              
               <div className="navbar-end ">
                 <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full bg-white text-blue-600 text-xl"><FaDownload className="text-slate-800" /> RESUME</button></a>
 
@@ -80,7 +88,7 @@ function App() {
           </section>
           {/* Typewriter */}
           <div className='flex flex-col gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
-            <h1 className="text-center text-white md:text-5xl lg:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
+            <h1 data-aos="fade-right" className="text-center text-white md:text-5xl lg:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
             <h1 className='text-center text-white md:text-6xl text-4xl flex'>
               <Typewriter
 
@@ -94,8 +102,8 @@ function App() {
             </h1>
 
             <div className='flex gap-12'>
-              <a href="#projects"><button className='btn bg-transparent text-white text-xl hover:-translate-x-2 hover:text-blue-600 hover:bg-white'>My Projects</button></a>
-              <a href="#services"><button className='btn text-blue-600 text-xl hover:translate-x-2 bg-white hover:text-white hover:bg-blue-600'>See Services</button></a>
+              <a href="#projects"><button data-aos="fade-right" data-aos-duration="3000" className='btn bg-transparent text-white text-xl hover:-translate-x-2 hover:text-blue-600 hover:bg-white'>My Projects</button></a>
+              <a href="#services"><button data-aos="fade-left" data-aos-duration="3000" className='btn text-blue-600 text-xl hover:translate-x-2 bg-white hover:text-white hover:bg-blue-600'>See Services</button></a>
             </div>
           </div>
         </div>
@@ -104,13 +112,13 @@ function App() {
           <section className=' md:container mx-auto'>
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
 
-              <div className='lg:w-1/3  p-2 rounded-xl'>
+              <div data-aos="flip-left" data-aos-duration="3000" className='lg:w-1/3  p-2 rounded-xl'>
                 <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className=' w-full h-full rounded shadow-lg  shadow-[#615CD4]' />
               </div>
 
               <div className='lg:w-2/3 space-y-2 rounded-xl h-full p-2 lg:mt-0 mt-2'>
-                <h2 className='text-3xl text-center font-bold text-[#615CD4]'>About Me</h2>
-                <h1 className='text-center text-white md:text-5xl text-3xl flex '>
+                <h2  data-aos="fade-left" className='text-3xl text-center font-bold text-[#615CD4]'>About Me</h2>
+                <h1 className='text-center text-white md:text-4xl text-3xl 2xl:text-4xl flex '>
                   <Typewriter
 
                     options={{
@@ -121,7 +129,8 @@ function App() {
                     }}
                   />
                 </h1>
-                <p className='text-slate-300 '>
+                <p data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" className='text-slate-300 '>
                   <br />
                   I am Mostafa Shahriar Asif, a FULL STACK(MERN) DEVELOPER, a dedicated Computer Science and Engineering student at the International Islamic University Chittagong. As a passionate Front-end Web Developer, I specialize in crafting engaging and dynamic websites using React Js. My journey in the realm of web development goes beyond the front-end, as I also possess a foundational understanding of backend technologies.
                   <br />
@@ -130,13 +139,13 @@ function App() {
                   Currently, I am immersed in the exploration of Next.js to further enhance my skill set. My immediate goal is to secure a position in a dynamic company where I can contribute my expertise and continue to grow as a professional. I take pride in having completed three noteworthy projects that showcase both my creativity and technical proficiency.Driven by a relentless pursuit of excellence, I aspire to excel in the ever-evolving field of web development. My commitment to delivering exceptional user experiences and staying abreast of industry trends fuels my determination to make a lasting impact in the world of technology.
                   Let`s build something remarkable together!
                 </p>
-                <h2 className='text-2xl font-bold text-white pt-6'>Education</h2>
-                <p className=" text-slate-200  text-xl">BSc. in Computer Science and Engineering (8th Semester)</p>
-                <p className="pl-4 text-slate-400">International Islamic University Chittagong</p>
-                <p className=" text-slate-200  text-xl">HSC (2019)</p>
-                <p className="pl-4 text-slate-400">Govt. City College Chittagong</p>
-                <p className=" text-slate-200  text-xl">SSC (2017)</p>
-                <p className="pl-4 text-slate-400">Bakolia Govt. High School</p>
+                <h2 data-aos="fade-down" className='text-2xl font-bold text-white pt-6'>Education</h2>
+                <p data-aos="fade-right" className=" text-slate-200  text-xl">BSc. in Computer Science and Engineering (8th Semester)</p>
+                <p data-aos="fade-up" data-aos-duration="2000" className="pl-4 text-slate-400">International Islamic University Chittagong</p>
+                <p data-aos="fade-right" className=" text-slate-200  text-xl">HSC (2019)</p>
+                <p data-aos="fade-up" data-aos-duration="2000" className="pl-4 text-slate-400">Govt. City College Chittagong</p>
+                <p data-aos="fade-right" className=" text-slate-200  text-xl">SSC (2017)</p>
+                <p data-aos="fade-up" data-aos-duration="2000" className="pl-4 text-slate-400">Bakolia Govt. High School</p>
               </div>
             </div>
 
@@ -144,12 +153,12 @@ function App() {
             <div id='skills' className=' gap-8 mt-12 px-2 '>
 
               <div className=' space-y-2  rounded-xl h-full p-2'>
-                <h2 className='text-3xl text-center text- font-bold text-[#615CD4]'>Skills</h2>
+                <h2 data-aos="fade-left"className='text-3xl text-center text- font-bold text-[#615CD4]'>Skills</h2>
                 <div className='md:grid lg:grid-cols-3  md:grid-cols-4  lg:gap-4 gap-2'>
 
                 <div className='lg:col-span-3 col-span-4 rounded-xl p-2 bg-slate-900 md:mt-0 mt-2'>
-                    <h1 className='text-center text-xl text-white font-bold py-2'>Languages & Algorithms</h1>
-                    <div className='grid grid-cols-3 md:gap-6 gap-3'>
+                    <h1 data-aos="fade-down"  data-aos-duration="2000" className='text-center text-xl text-white font-bold py-2'>Languages & Algorithms</h1>
+                    <div data-aos="zoom-in" data-aos-duration="2000" className='grid grid-cols-3 md:gap-6 gap-3'>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><TbBrandJavascript />JavaScript</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiTypescript /> TypeScript</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><FaCode /> C</button>
@@ -159,8 +168,8 @@ function App() {
                   </div>
 
                   <div className='lg:col-span-2 col-span-3  rounded-xl md:p-2 p-1 bg-slate-900'>
-                    <h1 className='text-center text-xl text-white font-bold py-2'>Front-end</h1>
-                    <div className='grid md:grid-cols-3 grid-cols-2 lg:gap-6 gap-2 '>
+                    <h1 data-aos="fade-down"  data-aos-duration="2000" className='text-center text-xl text-white font-bold py-2'>Front-end</h1>
+                    <div data-aos="zoom-in" data-aos-duration="2000" className='grid md:grid-cols-3 grid-cols-2 lg:gap-6 gap-2 '>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><AiFillHtml5 />HTML</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><DiCss3 />CSS</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiTailwindcss />Tailwind CSS</button>
@@ -169,22 +178,22 @@ function App() {
                   </div>
 
                   <div className='rounded-xl p-2 bg-slate-800 md:mt-0 mt-2'>
-                    <h1 className='text-center text-xl text-white font-bold py-2'>Back-end</h1>
-                    <div className='grid grid-rows-2 gap-6'>
+                    <h1 data-aos="fade-down"  data-aos-duration="2000" className='text-center text-xl text-white font-bold py-2'>Back-end</h1>
+                    <div data-aos="zoom-in" data-aos-duration="2000" className='grid grid-rows-2 gap-6'>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><DiNodejsSmall />Node.js</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiExpress />Express.js</button>
                     </div>
                   </div>
                   <div className='rounded-xl p-2 bg-slate-800 md:mt-0 mt-2'>
-                    <h1 className='text-center text-xl text-white font-bold py-2'>Authentication & Database</h1>
-                    <div className='grid grid-rows-2 gap-6'>
+                    <h1 data-aos="fade-down"  data-aos-duration="2000" className='text-center text-xl text-white font-bold py-2'>Authentication & Database</h1>
+                    <div data-aos="zoom-in" data-aos-duration="2000" className='grid grid-rows-2 gap-6'>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiFirebase />Firebase</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiMongodb />MongoDB</button>
                     </div>
                   </div>
                   <div className='lg:col-span-2 col-span-3  rounded-xl p-2 bg-slate-900 md:mt-0 mt-2'>
-                    <h1 className='text-center text-xl text-white font-bold py-2'>Tools & Deployment</h1>
-                    <div className='grid lg:grid-cols-3 grid-cols-2 gap-6'>
+                    <h1 data-aos="fade-down"  data-aos-duration="2000" className='text-center text-xl text-white font-bold py-2'>Tools & Deployment</h1>
+                    <div data-aos="zoom-in" data-aos-duration="2000" className='grid lg:grid-cols-3 grid-cols-2 gap-6'>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><BiGitBranch />Git</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><DiGithubBadge />Github</button>
                       <button className='btn bg-[#615CD4] text-xl text-white hover:translate-x-2 hover:bg-white hover:text-[#615CD4]'><SiCanva />Canva</button>
