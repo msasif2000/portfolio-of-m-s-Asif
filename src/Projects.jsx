@@ -12,8 +12,8 @@ const Projects = () => {
     }, [])
     //console.log(projects);
     return (
-        <div className="md:container mx-auto">
-            <h2 className='text-3xl text-center text- font-bold text-[#615CD4] py-4'>Projects</h2>
+        <div className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
+            <h2 data-aos="fade-left" className='text-3xl text-center text- font-bold text-[#615CD4] mt-20 mb-8'>Projects</h2>
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-2">
                 {
                     projects?.map(project => <ProjectCard key={project.id} project={project}></ProjectCard>)
