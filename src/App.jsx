@@ -39,7 +39,7 @@ function App() {
 
   const currentYear = new Date().getFullYear();
   return (
-    <div className='lg:px-2'>
+    <div className=''>
       <div>
         {/* Navbar */}
         <div style={homeStyle} className=''>
@@ -203,12 +203,12 @@ function App() {
               <div id="services" className=" rounded-xl p-2 w-full">
                 <h2 data-aos="fade-left" className='text-3xl text-center text- font-bold text-[#615CD4] mt-16 mb-8'>Services</h2>
                 <div className="text-slate-300 text-xl grid lg:grid-cols-2 gap-4">
-                  <div className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s1} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" /> Interactive and Dynamic website using React</div>
-                  <div className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s3} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Backend Development using Node JS and Express JS</div>
-                  <div className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s2} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />JWT, Payment Gateway, Authentication</div>
-                  <div className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s4} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Responsive Design</div>
-                  <div className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s5} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Database management (MongoDB) to store Information</div>
-                  <div className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s6} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Different Interface design for different role</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s1} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" /> Interactive and Dynamic website using React</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s3} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Backend Development using Node JS and Express JS</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s2} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />JWT, Payment Gateway, Authentication</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s4} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Responsive Design</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s5} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Database management (MongoDB) to store Information</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s6} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Different Interface design for different role</div>
                 </div>
               </div>
             </div>
@@ -238,18 +238,24 @@ function App() {
             </div>
           </section>
 
-          <section style={homeStyle} className="p-20 mt-12 md:flex gap-8 justify-center items-center">
-            <div>
-              <p className="text-center text-xl text-white py-2">&copy; {currentYear},  All rights reserved by  MOSTAFA SHAHRIAR ASIF</p>
-              <div className='flex justify-center items-center gap-8'>
-                <a href="https://www.linkedin.com/in/mostafa-s-asif-cse/" className=' text-white  hover:bg-white rounded bg-[#615CD4] hover:text-[#615CD4]  p-2 hover:rounded-xl'><AiFillLinkedin className="text-3xl" /></a>
-                <a href="https://github.com/msasif2000" className=' text-white  hover:bg-white hover:text-[#615CD4] rounded bg-[#615CD4]  p-2 hover:rounded-xl'><AiFillGithub className="text-3xl" /></a>
-                <a href="https://asifshahblog.blogspot.com/" className=' text-white  hover:bg-white rounded bg-[#615CD4] hover:text-[#615CD4]  p-2 hover:rounded-xl'><FaBlogger className="text-3xl" /></a>
-                <a href="https://www.facebook.com/mostafa.asif.cse/" className=' text-white  hover:bg-white rounded bg-[#615CD4] hover:text-[#615CD4]  p-2 hover:rounded-xl'><AiFillFacebook className="text-3xl" /></a>
-              </div>
+          <section style={homeStyle} className="p-20 mt-12">
+            <div className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
+              <div className="md:flex gap-8 justify-center items-center">
+                <div >
+                  <p data-aos="fade-left" data-aos-duration="2000" className="text-center text-xl text-white py-2">&copy; {currentYear},  All rights reserved by  MOSTAFA SHAHRIAR ASIF</p>
+                  <div data-aos="fade-up" data-aos-duration="2000" className='flex justify-center items-center gap-8'>
+                    <a href="https://www.linkedin.com/in/mostafa-s-asif-cse/" className=' text-white  hover:bg-white rounded bg-[#615CD4] hover:text-[#615CD4]  p-2 hover:rounded-xl'><AiFillLinkedin className="text-3xl" /></a>
+                    <a href="https://github.com/msasif2000" className=' text-white  hover:bg-white hover:text-[#615CD4] rounded bg-[#615CD4]  p-2 hover:rounded-xl'><AiFillGithub className="text-3xl" /></a>
+                    <a href="https://asifshahblog.blogspot.com/" className=' text-white  hover:bg-white rounded bg-[#615CD4] hover:text-[#615CD4]  p-2 hover:rounded-xl'><FaBlogger className="text-3xl" /></a>
+                    <a href="https://www.facebook.com/mostafa.asif.cse/" className=' text-white  hover:bg-white rounded bg-[#615CD4] hover:text-[#615CD4]  p-2 hover:rounded-xl'><AiFillFacebook className="text-3xl" /></a>
+                  </div>
 
+                </div>
+                <div  data-aos="fade-up" data-aos-duration="2000" className="md:mt-0 mt-2 ">
+                  <img src={logo} alt="" className="h-40 w-40" />
+                </div>
+              </div>
             </div>
-            <div className="md:mt-0 mt-2 flex justify-center items-center "><img src={logo} alt="" className="h-40 w-40" /></div>
 
           </section>
 
