@@ -9,6 +9,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 import resume from '../src/assets/MOSTAFA SHAHRIAR ASIF.pdf'
 import logo from '../src/assets/logo.png'
+import bimg from '../src/assets/Rect Light1.svg'
 import Typewriter from 'typewriter-effect'
 import Projects from './Projects'
 import ScrollTopArrow from './ScrollTopArrow'
@@ -27,6 +28,12 @@ function App() {
 
   const homeStyle = {
     'background-image': `url(${bg})`,
+    'background-repeat': 'no-repeat',
+    'background-size': 'cover',
+    'background-position': 'center',
+  }
+  const bodyStyle = {
+    'background-image': `url(${bimg})`,
     'background-repeat': 'no-repeat',
     'background-size': 'cover',
     'background-position': 'center',
@@ -95,8 +102,8 @@ function App() {
           </div>
         </div>
         {/* About */}
-        <section id='about' className='bg-black w-full lg:pt-20'>
-          <section className='lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto'>
+        <section style={bodyStyle} className=' w-full lg:pt-20'>
+          <section id='about' className='lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto'>
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
 
               <div data-aos="flip-left"
@@ -198,6 +205,7 @@ function App() {
 
             </div>
           </section>
+
           <section className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
             <div className=' md:p-2 lg:p-0  w-full  h-full space-y-4'>
               <div id="services" className=" rounded-xl p-2 w-full">
@@ -217,6 +225,7 @@ function App() {
           <section id='projects' className='mt-12 px-2'>
             <Projects></Projects>
           </section>
+
           <section className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
             <h2 data-aos="fade-left" className='text-3xl text-center font-bold text-[#615CD4] mt-16 mb-8'>Contacts</h2>
             <div id="contact" className="rounded-xl bg-white p-2 lg:w-full">
