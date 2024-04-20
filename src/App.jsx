@@ -8,8 +8,8 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
 import resume from '../src/assets/MOSTAFA SHAHRIAR ASIF.pdf'
-import logo from '../src/assets/logo.png'
-import bimg from '../src/assets/Rect Light1.svg'
+// import logo from '../src/assets/logo.png'
+import bimg from '../src/assets/bodybg.png'
 import Typewriter from 'typewriter-effect'
 import Projects from './Projects'
 import ScrollTopArrow from './ScrollTopArrow'
@@ -32,12 +32,12 @@ function App() {
     'background-size': 'cover',
     'background-position': 'center',
   }
-  const bodyStyle = {
-    'background-image': `url(${bimg})`,
-    'background-repeat': 'no-repeat',
-    'background-size': 'cover',
-    'background-position': 'center',
-  }
+  // const bodyStyle = {
+  //   'background-image': `url(${bimg})`,
+  //   'background-repeat': 'no-repeat',
+  //   'background-size': 'cover',
+  //   'background-position': 'center',
+  // }
 
   useEffect(() => {
     Aos.init();
@@ -102,7 +102,7 @@ function App() {
           </div>
         </div>
         {/* About */}
-        <section style={bodyStyle} className=' w-full lg:pt-20'>
+        <div style={{ backgroundImage: `url(${bimg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}  className=' w-full lg:pt-20'> 
           <section id='about' className='lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto'>
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
 
@@ -260,9 +260,9 @@ function App() {
                   </div>
 
                 </div>
-                <div  data-aos="fade-up" data-aos-duration="2000" className="md:mt-0 mt-2 ">
+                {/* <div  data-aos="fade-up" data-aos-duration="2000" className="md:mt-0 mt-2 ">
                   <img src={logo} alt="" className="h-40 w-40" />
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -270,7 +270,7 @@ function App() {
 
 
           <ScrollTopArrow></ScrollTopArrow>
-        </section>
+        </div>
 
       </div>
     </div>
