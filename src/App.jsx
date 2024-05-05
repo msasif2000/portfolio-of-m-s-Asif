@@ -81,28 +81,67 @@ function App() {
             </div>
           </section>
           {/* Typewriter */}
-          <div className='flex flex-col gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
-            <h1 data-aos="fade-right" className="text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
-            <h1 className='text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex'>
-              <Typewriter
+          <div className='flex gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
+            <div><h1 data-aos="fade-right" className="text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
+              <h1 className='text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex'>
+                <Typewriter
 
-                options={{
-                  autoStart: true,
-                  loop: true,
-                  delay: 80,
-                  strings: [' A <strong>FULL STACK(MERN) DEVELOPER</strong></span>', 'WELCOME to my PORTFOLIO!'],
-                }}
-              />
-            </h1>
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 80,
+                    strings: [' A <strong>FULL STACK(MERN) DEVELOPER</strong></span>', 'WELCOME to my PORTFOLIO!'],
+                  }}
+                />
+              </h1></div>
 
-            <div data-aos="zoom-in" data-aos-duration="5000" className='flex gap-12'>
+            {/* <div data-aos="zoom-in" data-aos-duration="5000" className='flex gap-12'>
               <a href="#projects"><button className='btn bg-transparent text-white text-xl hover:-translate-x-2 hover:text-blue-600 hover:bg-white'>My Projects</button></a>
               <a href="#services"><button className='btn text-blue-600 text-xl hover:translate-x-2 bg-white hover:text-white hover:bg-blue-600'>See Services</button></a>
+            </div> */}
+            <div className="orbit">
+              <div>
+                <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className="center-image rounded-full" />
+              </div>
+              <ul>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+                <li>
+                  <SiTypescript />
+                  <p>TypeScript</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
         {/* About */}
-        <div style={{ backgroundImage: `url(${bimg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}  className=' w-full lg:pt-20'> 
+        <div style={{ backgroundImage: `url(${bimg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className=' w-full lg:pt-20'>
           <section id='about' className='lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto'>
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
 
