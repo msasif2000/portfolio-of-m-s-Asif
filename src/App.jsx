@@ -76,75 +76,39 @@ function App() {
 
               <div className="navbar-end ">
                 <a href={resume} download="Moostafa Shahriar Asif (resume)"><button className="btn btn-sm rounded-full bg-white text-blue-600 text-xl"><FaDownload className="text-slate-800" /> RESUME</button></a>
-
               </div>
             </div>
           </section>
+
+
           {/* Typewriter */}
-          <div className='flex gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
-            <div><h1 data-aos="fade-right" className="text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
+          <div className='flex flex-col gap-12 justify-center items-center h-screen sticky inset-0  w-full py-28 '>
+            <div>
+              <h1 data-aos="fade-right" className="text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex gap-3 flex-wrap items-center justify-center">HELLO! This is <strong> MOSTAFA SHAHRIAR ASIF</strong></h1>
               <h1 className='text-center text-white md:text-5xl lg:text-5xl 2xl:text-6xl text-3xl flex'>
                 <Typewriter
-
                   options={{
                     autoStart: true,
                     loop: true,
                     delay: 80,
-                    strings: [' A <strong>FULL STACK(MERN) DEVELOPER</strong></span>', 'WELCOME to my PORTFOLIO!'],
+                    strings: ['A <strong>FULL STACK(MERN) DEVELOPER</strong></span>','<strong>MERN STACK DEVELOPER at "CollabXglobal"</strong></span>', 'WELCOME to my <strong>PORTFOLIO!</strong> '],
                   }}
                 />
-              </h1></div>
+              </h1>
+            </div>
 
-            {/* <div data-aos="zoom-in" data-aos-duration="5000" className='flex gap-12'>
+            <div data-aos="zoom-in" data-aos-duration="5000" className='flex gap-12'>
               <a href="#projects"><button className='btn bg-transparent text-white text-xl hover:-translate-x-2 hover:text-blue-600 hover:bg-white'>My Projects</button></a>
               <a href="#services"><button className='btn text-blue-600 text-xl hover:translate-x-2 bg-white hover:text-white hover:bg-blue-600'>See Services</button></a>
-            </div> */}
-            <div className="orbit">
-              <div>
-                <img src="https://i.ibb.co/C82zRd1/IMG-20230226-145409.jpg" alt="" className="center-image rounded-full" />
-              </div>
-              <ul>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-                <li>
-                  <SiTypescript />
-                  <p>TypeScript</p>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
+
+
         {/* About */}
         <div style={{ backgroundImage: `url(${bimg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className=' w-full lg:pt-20'>
           <section id='about' className='lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto'>
             <div className='lg:flex lg:gap-8 gap-4 pt-4  items-center px-2'>
-
               <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="3000" className='lg:w-1/3  p-2 rounded-xl'>
@@ -152,7 +116,7 @@ function App() {
               </div>
 
               <div className='lg:w-2/3 space-y-2 rounded-xl h-full p-2 lg:mt-0 mt-2'>
-                <h2 data-aos="fade-left" className='text-3xl text-center font-bold text-[#615CD4]'>About Me</h2>
+                <h2 data-aos="fade-left" data-aos-duration="1500" className='text-3xl md:text-4xl xl:text-5xl text-center font-bold text-[#615CD4]'>About Me</h2>
                 <h1 className='text-center text-white md:text-4xl text-3xl 2xl:text-4xl flex '>
                   <Typewriter
 
@@ -187,7 +151,7 @@ function App() {
             <div id='skills' className=' gap-8 mt-12 px-2 '>
 
               <div className=' space-y-2  rounded-xl h-full p-2'>
-                <h2 data-aos="fade-left" className='text-3xl text-center text- font-bold text-[#615CD4] mt-16 mb-8'>Skills</h2>
+                <h2 data-aos="fade-left" data-aos-duration="1500" className='text-3xl md:text-4xl xl:text-5xl text-center font-bold text-[#615CD4] mt-16 mb-8'>Skills</h2>
                 <div className='md:grid lg:grid-cols-3  md:grid-cols-4  lg:gap-4 gap-2 '>
 
                   <div className='lg:col-span-3 col-span-4 rounded-xl p-2 bg-slate-900 md:mt-0 mt-2'>
@@ -245,17 +209,18 @@ function App() {
             </div>
           </section>
 
+          {/* services  */}
           <section className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
             <div className=' md:p-2 lg:p-0  w-full  h-full space-y-4'>
               <div id="services" className=" rounded-xl p-2 w-full">
-                <h2 data-aos="fade-left" className='text-3xl text-center text- font-bold text-[#615CD4] mt-16 mb-8'>Services</h2>
+                <h2 data-aos="fade-left" data-aos-duration="1500" className='text-3xl md:text-4xl xl:text-5xl text-center font-bold text-[#615CD4] mt-16 mb-8'>Services</h2>
                 <div className="text-slate-300 text-xl grid lg:grid-cols-2 gap-4">
-                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s1} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" /> Interactive and Dynamic website using React</div>
-                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s3} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Backend Development using Node JS and Express JS</div>
-                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s2} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />JWT, Payment Gateway, Authentication</div>
-                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s4} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Responsive Design</div>
-                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s5} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Database management (MongoDB) to store Information</div>
-                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2"><img src={s6} className="h-16 m-2 hover:bg-[#615CD4] bg-white p-2 rounded" />Different Interface design for different role</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2 group"><img src={s1} className="h-16 m-2 group-hover:bg-[#615CD4] group-hover:animate-pulse bg-white p-2 rounded" /> Interactive and Dynamic website using React</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2 group"><img src={s3} className="h-16 m-2 group-hover:bg-[#615CD4] group-hover:animate-pulse bg-white p-2 rounded" />Backend Development using Node JS and Express JS</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2 group"><img src={s2} className="h-16 m-2 group-hover:bg-[#615CD4] group-hover:animate-pulse bg-white p-2 rounded" />JWT, Payment Gateway, Authentication</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2 group"><img src={s4} className="h-16 m-2 group-hover:bg-[#615CD4] group-hover:animate-pulse bg-white p-2 rounded" />Responsive Design</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2 group"><img src={s5} className="h-16 m-2 group-hover:bg-[#615CD4] group-hover:animate-pulse bg-white p-2 rounded" />Database management (MongoDB) to store Information</div>
+                  <div data-aos="fade-up" data-aos-duration="2000" className="flex items-center flex-col bg-[#615CD4] w-full h-full hover:bg-white hover:text-black rounded-lg py-2 group"><img src={s6} className="h-16 m-2 group-hover:bg-[#615CD4] group-hover:animate-pulse bg-white p-2 rounded" />Different Interface design for different role</div>
                 </div>
               </div>
             </div>
@@ -265,10 +230,80 @@ function App() {
             <Projects></Projects>
           </section>
 
-          <section className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
-            <h2 data-aos="fade-left" className='text-3xl text-center font-bold text-[#615CD4] mt-16 mb-8'>Contacts</h2>
-            <div id="contact" className="rounded-xl bg-white p-2 lg:w-full">
 
+          <section>
+            <h2 data-aos="fade-left" data-aos-duration="1500" className='text-3xl md:text-4xl xl:text-5xl text-center font-bold text-[#615CD4] mt-16 mb-8'>My Journey</h2>
+            <section className="md:flex md:flex-col text-slate-200 lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
+              <div data-aos="fade-up" data-aos-duration="1500" className="flex items-center h-full">
+                <div className="md:flex-1"></div>
+                <div className="flex flex-col items-center h-full px-4">
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                  <div className="w-24 h-16 flex items-center justify-center bg-[#615CD4] text-white rounded-full text-center">March-2020
+                  </div>
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                </div>
+                <div className="flex-1 py-4 font-bold text-2xl lg:text-3xl">Begin and Learned Programming at University
+                </div>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1700" className="flex items-center h-full">
+                <div className="flex-1 py-4 font-bold text-2xl lg:text-3xl text-right">Learned C, C++, DSA, Algorithm
+                </div>
+                <div className="flex flex-col items-center h-full px-4">
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                  <div className="w-24 h-16 flex items-center justify-center bg-[#615CD4] text-white rounded-full text-center">2020-2023
+                  </div>
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                </div>
+                <div className="md:flex-1"></div>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="1900" className="flex items-center h-full">
+                <div className="md:flex-1"></div>
+                <div className="flex flex-col items-center h-full px-4">
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                  <div className="w-24 h-16 flex items-center justify-center bg-[#615CD4] text-white rounded-full text-center">July-2023
+                  </div>
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                </div>
+                <div className="flex-1 py-4 font-bold text-2xl lg:text-3xl">Enrolled WEB DEVELOPMENT Course at {'"Programming Hero"'}</div>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="2100" className="flex items-center h-full">
+                <div className="flex-1 py-4 font-bold text-2xl lg:text-3xl text-right">Certified as Web Developer
+                </div>
+                <div className="flex flex-col items-center h-full px-4">
+                  <div className="h-10 w-1 bg-[#615CD4]"></div>
+                  <div className="w-24 h-16 flex items-center justify-center bg-[#615CD4] text-white rounded-full text-center">Jan-2024
+                  </div>
+                  <div className="h-10 w-1 bg-[#615CD4]"></div>
+                </div>
+                <div className="md:flex-1"></div>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="2300" className="flex items-center h-full">
+                <div className="md:flex-1"></div>
+                <div className="flex flex-col items-center h-full px-4">
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                  <div className="w-24 h-16 flex items-center justify-center bg-[#615CD4] text-white rounded-full text-center">Jan-March 2024
+                  </div>
+                  <div className="h-8 w-1 bg-[#615CD4]"></div>
+                </div>
+                <div className="flex-1 py-4 font-bold text-2xl lg:text-3xl">Lead the Project {'"LumiJobs"'}</div>
+              </div>
+              <div data-aos="fade-up" data-aos-duration="2500" className="flex items-center h-full">
+                <div className="flex-1 py-4 font-bold text-2xl lg:text-3xl text-right">Employed as MERN Stack developer at <a href="https://collabxglobal.com/">{'"CollabXglobal"'}</a>
+                </div>
+                <div className="flex flex-col items-center h-full px-4">
+                  <div className="h-10 w-1 bg-[#615CD4]"></div>
+                  <div className="w-24 h-16 flex items-center justify-center bg-[#615CD4] text-white rounded-full text-center">May-2024
+                  </div>
+                  <div className="h-10 w-1 bg-[#615CD4]"></div>
+                </div>
+                <div className="md:flex-1"></div>
+              </div>
+            </section>
+          </section>
+
+          <section className="lg:max-w-screen-lg 2xl:max-w-screen-xl mx-auto">
+            <h2 data-aos="fade-left" data-aos-duration="1500" className='text-3xl md:text-4xl xl:text-5xl text-center font-bold text-[#615CD4] mt-16 mb-8'>Contacts</h2>
+            <div id="contact" className="rounded-xl bg-white p-2 lg:w-full">
               <div className="md:flex justify-between items-center">
                 <div data-aos="fade-right" data-aos-duration="2000" className='flex flex-col gap-2 '>
                   <p className='flex gap-2 text-xl text-black hover:bg-black hover:text-[#615CD4]  p-2 hover:rounded-xl'><HiOutlineMail className="text-3xl" /> <a href={`mailto:asif311.cse@gmail.com`}>asif311.cse@gmail.com</a></p>
